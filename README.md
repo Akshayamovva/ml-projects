@@ -28,6 +28,7 @@ Delivered the most reliable predictions with strong generalization.
 Tech Stack
 Languages & Libraries: Python, Pandas, NumPy, Scikit-Learn, XGBoost
 Tools: Jupyter Notebook, Pipelines, GridSearchCV
+
 PROJECT 2 Vehicle Insurance Claim Prediction
 
 This project focuses on predicting whether a customer will claim vehicle insurance using machine learning techniques. The dataset contains 381,109 records and 12 features, and the objective is to build an accurate classification model to help insurance companies identify potential claimants.
@@ -41,46 +42,32 @@ Dataset Shape: 381,109 × 12
 Target Variable: Response (1 → Claim, 0 → No Claim)
 
  Data Preprocessing
-
+ 
 Performed data cleaning and transformation to ensure high-quality inputs for modeling:
-
 Outlier Removal: Identified and removed extreme values.
-
 Missing Values: Imputed using mean for numerical and mode for categorical features.
-
 Feature Encoding: Converted categorical variables into numeric format.
-
 Data Balancing: Applied SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance.
 
 Exploratory Data Analysis (EDA)
 
 Explored relationships between customer demographics, vehicle details, and claim probability.
-
 Identified key patterns and trends influencing the likelihood of claims.
-
 Visualized feature distributions and correlations using histograms, boxplots, and heatmaps.
 
- Machine Learning Models
+Machine Learning Models
 
 Implemented and compared multiple classification algorithms:
-
 K-Nearest Neighbors (KNN)
-
 Logistic Regression
-
 Naïve Bayes
-
 Decision Tree
-
 Random Forest
-
 XGBoost Classifier
-
 Feature Selection
-
 Applied SelectKBest (Chi² test) to choose the most impactful features.
 
- Model Optimization
+Model Optimization
 
 Used Pipelines, ColumnTransformer, and RandomizedSearchCV for hyperparameter tuning and workflow automation.
 
