@@ -1,100 +1,11 @@
-Project 1 Global Temperature and GHG Emissions Analysis
+Global Temperature and GHG Emissions Analysis
 
-This project explores the relationship between global temperature changes and greenhouse gas (GHG) emissions using a large-scale dataset of 8.6M+ records. The goal is to develop and evaluate predictive regression models that accurately estimate temperature variations based on emission data.
+This project involves building predictive regression models to study the relationship between global temperature changes and GHG emissions using a large dataset of 8.6M+ records. The data preprocessing included mean imputation based on the past five years to handle missing values. Multiple regression models were trained and tuned, including Linear, Polynomial, Ridge, Lasso, Decision Tree, KNN, Random Forest, and XGBoost, using Pipelines and GridSearchCV for hyperparameter optimization. All models were evaluated using R², MSE, and RMSE to ensure fair and accurate performance comparison. The Random Forest Regressor achieved the highest performance with an R² score of 0.873, demonstrating strong predictive capability. The project leverages tools and libraries such as Python, Pandas, NumPy, Scikit-Learn, and XGBoost, showcasing the application of machine learning techniques for climate data analysis.
 
-Project Overview
-Objective: Study the correlation between global temperature rise and GHG emissions.
-Dataset Size: 8,599,212 × 7
+Vehicle Insurance Claim Prediction
 
-Data Preprocessing:
-Mean imputation of missing values based on the past 5 years.
-Feature scaling and transformation for model readiness.
+This project focuses on predicting whether a customer will file a vehicle insurance claim using machine learning techniques. The dataset contains 381,109 records and 12 features, with the target variable indicating whether a claim was made. The data preprocessing phase involved handling missing values through mean and mode imputation, removing outliers, encoding categorical features, and applying SMOTE to balance the dataset. Extensive exploratory data analysis (EDA) was performed to uncover patterns between customer demographics, vehicle details, and claim probability. Multiple classification algorithms were implemented, including KNN, Logistic Regression, Naïve Bayes, Decision Tree, Random Forest, and XGBoost, with SelectKBest (Chi² test) used for feature selection. Model pipelines, ColumnTransformer, and RandomizedSearchCV were utilized for efficient preprocessing and hyperparameter tuning. Model performance was evaluated using Accuracy, Precision, Recall, and F1-Score, where the Random Forest Classifier achieved the best accuracy of 0.89, demonstrating strong predictive power. The project showcases how machine learning can enhance risk assessment and decision-making in the vehicle insurance industry by identifying key factors influencing claim likelihood.
 
-Modeling Approach
-Trained and tuned multiple regression models using Pipelines and GridSearchCV for hyperparameter optimization:
-Linear Regression
-Polynomial Regression
-Ridge & Lasso Regression
-Decision Tree Regressor
-K-Nearest Neighbors (KNN)
-Random Forest Regressor
-XGBoost Regressor
+Multiclass Sentiment Classification Using Merged Market and Emotion Datasets
 
-Evaluation
-All models were evaluated using R² Score, Mean Squared Error (MSE), and Root Mean Squared Error (RMSE) for accurate performance comparison.
-Best Model: Random Forest Regressor R² Score: 0.873
-Delivered the most reliable predictions with strong generalization.
-
-Tech Stack
-Languages & Libraries: Python, Pandas, NumPy, Scikit-Learn, XGBoost
-Tools: Jupyter Notebook, Pipelines, GridSearchCV
-
-PROJECT 2 Vehicle Insurance Claim Prediction
-
-This project focuses on predicting whether a customer will claim vehicle insurance using machine learning techniques. The dataset contains 381,109 records and 12 features, and the objective is to build an accurate classification model to help insurance companies identify potential claimants.
-
- Project Overview
-
-Goal: Predict the likelihood of a customer filing a vehicle insurance claim.
-
-Dataset Shape: 381,109 × 12
-
-Target Variable: Response (1 → Claim, 0 → No Claim)
-
- Data Preprocessing
- 
-Performed data cleaning and transformation to ensure high-quality inputs for modeling:
-Outlier Removal: Identified and removed extreme values.
-Missing Values: Imputed using mean for numerical and mode for categorical features.
-Feature Encoding: Converted categorical variables into numeric format.
-Data Balancing: Applied SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance.
-
-Exploratory Data Analysis (EDA)
-
-Explored relationships between customer demographics, vehicle details, and claim probability.
-Identified key patterns and trends influencing the likelihood of claims.
-Visualized feature distributions and correlations using histograms, boxplots, and heatmaps.
-
-Machine Learning Models
-
-Implemented and compared multiple classification algorithms:
-K-Nearest Neighbors (KNN)
-Logistic Regression
-Naïve Bayes
-Decision Tree
-Random Forest
-XGBoost Classifier
-Feature Selection
-Applied SelectKBest (Chi² test) to choose the most impactful features.
-
-Model Optimization
-
-Used Pipelines, ColumnTransformer, and RandomizedSearchCV for hyperparameter tuning and workflow automation.
-
- Model Evaluation
-
-Evaluated model performance using the following metrics:
-
-Accuracy
-
-Precision, Recall, F1-Score (Classification Report)
-
-Best Model: Random Forest Classifier
-
-Accuracy: 0.89
-
-Delivered the best balance of precision and recall.
-
-Tech Stack
-
-Languages & Libraries: Python, Pandas, NumPy, Scikit-Learn, XGBoost, Imbalanced-learn
-
-Tools: Jupyter Notebook, Matplotlib, Seaborn
-
-Key Insights
-
-Age, vehicle age, and driving experience were significant predictors of claim likelihood.
-
-Ensemble methods like Random Forest provided robust and generalizable performance.
-
-The project demonstrates the power of machine learning in risk assessment and customer targeting within the insurance domain.
+This project involved multiclass sentiment classification by combining insights from two datasets: Fear & Greed Index and Historical Transaction Data. Both datasets were cleaned and preprocessed, including handling missing values, encoding categorical features, and normalizing numerical columns. The datasets were then merged based on common attributes to create a unified view for analysis. Exploratory Data Analysis (EDA) was performed to extract key insights such as transaction trends, emotional sentiment distribution, and market behavior patterns. A Random Forest Classifier was applied for multiclass sentiment prediction, achieving 100% accuracy on the test set, which highlighted highly distinguishable sentiment patterns in the data. The project utilized Python, Pandas, Scikit-Learn, Matplotlib, Label Encoding, MinMaxScaler, and Random Forest Classifier to deliver a robust sentiment analysis solution.
